@@ -1,0 +1,31 @@
+ALGORITHM number
+VAR
+    count,count1,count2, count3,count4 INTEGER := 0;
+    sentence STRING;
+BEGIN
+    //nombre caractere
+    WHILE (sentence[count]<> ".") DO
+        count:= count+1;
+    END_WHILE
+     
+    write("le nombre de caractere est:", count);
+
+    //nombre mot    
+   REPEAT
+   if (sentence[count1]=="")
+       {count2:=count2+1;}
+    count1:=count1+1;
+   UNTIL (sentence[count1]== ".")
+    write("lenombre de mot est", count2);
+   
+
+   //le nombre de voyelles
+   REPEAT
+   if (sentence[count3]=="a" or sentence[count3]=="e" or sentence[count3]=="i" or sentence[count3]=="o" or sentence[count3]=="u" 
+   sentence[count3]=="y")
+       {count4:=count4+1;}
+    count3:=count3+1;
+   UNTIL (sentence[count3]== ".")
+    write("lenombre de voyelles est", count4);
+
+END
